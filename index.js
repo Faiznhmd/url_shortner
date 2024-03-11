@@ -11,9 +11,10 @@ const staticRoute = require('./routes/staticRoute.js');
 
 dotenv.config();
 ConnectDb();
+
+app.use(express.static(path.join(__dirname, '/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false })); //for form data html
-app.use(express.static(path.join(__dirname, '/')));
 
 app.use('/url', urlRoute);
 app.use('/', staticRoute);
