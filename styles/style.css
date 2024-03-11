@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  /* width: 100vw; */
+  background-color: #1d2135;
+  min-width: 1024px;
+}
+
+.h1 {
+  display: grid;
+  place-content: center;
+  margin-bottom: 20px;
+  color: #8b5cf6;
+  font-size: 96px;
+}
+.p {
+  color: #eef0fc;
+}
+
+.form {
+  display: grid;
+  place-content: center;
+  gap: 10px;
+}
+
+.input-group {
+  min-width: 400px;
+}
+
+.input {
+  min-width: 400px;
+  height: 44px;
+  background-color: #eef0fc;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  outline: none;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s,
+    background 0.2s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #eef0fc;
+  transition: color 0.3s cubic-bezier(0.25, 0.01, 0.25, 1) 0s;
+  padding-bottom: 8px;
+}
+
+/* .input:hover,
+.input:focus,
+.input-group:hover .input {
+  outline: none;
+  border-color: #05060f;
+} */
+
+/* .input-group:hover .label,
+.input:focus {
+  color: #05060fc2;
+} */
+
+.button {
+  max-width: 100px;
+  background-color: #eef0fc;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+}
+
+.button:hover {
+  background-image: linear-gradient(
+    90deg,
+    #53cbef 0%,
+    #dcc66c 50%,
+    #ffa3b6 75%,
+    #53cbef 100%
+  );
+  animation: slidernbw 5s linear infinite;
+  color: #000;
+}
+
+@keyframes slidernbw {
+  to {
+    background-position: 20vw;
+  }
+}
+
+.data {
+  margin-top: 10px;
+  display: grid;
+  place-content: center;
+  gap: 8px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.form {
+  padding-bottom: 20px;
+}
+th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 8px;
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+}
