@@ -9,9 +9,6 @@
 
   <body>
     <h1 class="h1">URL Shortner</h1>
-    <% if (locals.id) { %>
-    <p class="p">URL Generated : http://localhost:8000/url/<%= id %></p>
-    <% } %>
     <form class="form" method="POST" action="/url">
       <div class="input-group">
         <label class="label">Enter Your Original URL</label>
@@ -24,6 +21,14 @@
       </div>
       <button class="button" type="submit">Generate</button>
     </form>
+
+    <% if (locals.id) { %>
+    <p class="p">
+      URL Generated : <%= process.env.NODE_ENV === 'production' ?
+      'https://url-shortner-faizan.vercel.app' : 'http://localhost:8000'
+      %>/url/<%= id %>
+    </p>
+    <% } %>
     <div class="data">
       <% if (locals.urls) { %>
       <table>
