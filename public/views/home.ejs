@@ -24,9 +24,12 @@
 
     <% if (locals.id) { %>
     <p class="p">
-      URL Generated : <%= process.env.NODE_ENV === 'production' ?
-      'https://url-shortner-faizan.vercel.app' : 'http://localhost:8000'
-      %>/url/<%= id %>
+      URL Generated :
+      <a href="">
+        <%= process.env.NODE_ENV === 'production' ?
+        'https://url-shortner-faizan.vercel.app' : 'http://localhost:8000'
+        %>/url/<%= id %>
+      </a>
     </p>
     <% } %>
     <div class="data">
