@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles//login.css" type="text/css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Signup</h1>
+    <!-- <h1>Signup</h1>
     <form action="/user" method="post">
       <label>FullName</label>
       <input type="text" required name="name" />
@@ -15,7 +16,46 @@
       <label>Password</label>
       <input type="text" required name="password" />
 
-      <button type="submit">Signup</button>
-    </form>
+      <button type="submit">Signup</button> -->
+    <div class="card">
+      <h4 class="title">Sign UP</h4>
+      <form action="/user method" method="post">
+        <div class="field">
+          <input
+            autocomplete="off"
+            placeholder="FullName"
+            class="input-field"
+            required
+            name="Name"
+          />
+        </div>
+
+        <div class="field">
+          <input
+            autocomplete="off"
+            id="logemail"
+            placeholder="Email"
+            class="input-field"
+            name="logemail"
+            type="email"
+            required
+            name="email"
+          />
+        </div>
+        <div class="field">
+          <input
+            autocomplete="off"
+            id="logpass"
+            placeholder="Password"
+            class="input-field"
+            name="logpass"
+            type="password"
+            required
+            name="password"
+          />
+        </div>
+        <button class="btn" type="submit">Login</button>
+      </form>
+    </div>
   </body>
 </html>

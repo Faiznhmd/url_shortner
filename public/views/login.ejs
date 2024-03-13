@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles//login.css" type="text/css" />
     <title>Login</title>
   </head>
   <body>
@@ -14,15 +15,36 @@
         <title>Document</title>
       </head>
       <body>
-        <h1>Login</h1>
-        <form action="/user/login" method="post">
-          <label>Email</label>
-          <input type="text" required name="email" />
-          <label>Password</label>
-          <input type="text" required name="password" />
-
-          <button type="submit">Login</button>
-        </form>
+        <div class="card">
+          <h4 class="title">Log In!</h4>
+          <form action="/user/login" method="post">
+            <div class="field">
+              <input
+                autocomplete="off"
+                id="logemail"
+                placeholder="Email"
+                class="input-field"
+                name="logemail"
+                type="email"
+                required
+                name="email"
+              />
+            </div>
+            <div class="field">
+              <input
+                autocomplete="off"
+                id="logpass"
+                placeholder="Password"
+                class="input-field"
+                name="logpass"
+                type="password"
+                required
+                name="password"
+              />
+            </div>
+            <button class="btn" type="submit">Login</button>
+          </form>
+        </div>
       </body>
     </html>
   </body>
